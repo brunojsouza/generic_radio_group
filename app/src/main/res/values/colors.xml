@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/pumpkin_orange</color>
+    <color name="colorPrimaryDark">@color/brownish_orange</color>
+    <color name="colorAccent">@color/pumpkin_orange</color>
+
+    <color name="pumpkin_orange">#fa7f22</color>
+    <color name="brownish_orange">#dd7222</color>
+
+    <color name="bluey_grey">#8c91a9</color>
+    <color name="black">#000000</color>
+</resources>
