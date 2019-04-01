@@ -12,7 +12,7 @@
             android:layout_height="match_parent"
             tools:context=".ui.MainActivity">
 
-        <com.bruno.groupradiobutton.custom.InterRadioGroup
+        <com.bruno.groupradiobutton.custom.SimpleRadioGroup
                 android:id="@+id/expiry_dates"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -25,7 +25,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 android:layout_marginEnd="8dp"
                 app:dateList="@{viewModel.list}">
-        </com.bruno.groupradiobutton.custom.InterRadioGroup>
+        </com.bruno.groupradiobutton.custom.SimpleRadioGroup>
 
         <View android:layout_width="match_parent"
               android:layout_height="5dp"

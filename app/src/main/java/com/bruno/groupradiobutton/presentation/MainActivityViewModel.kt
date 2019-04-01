@@ -5,7 +5,7 @@ import android.view.ViewGroup
 import androidx.databinding.ObservableBoolean
 import androidx.databinding.ObservableField
 import com.bruno.groupradiobutton.R
-import com.bruno.groupradiobutton.custom.InterRadioGroup
+import com.bruno.groupradiobutton.custom.SimpleRadioGroup
 import com.bruno.groupradiobutton.custom.radioGroup.CustomRadioGroup
 import com.bruno.groupradiobutton.custom.radioGroup.CustomRadioGroupAdapter
 import com.bruno.groupradiobutton.custom.radioGroup.CustomRadioGroupModel
@@ -28,7 +28,7 @@ class MainActivityViewModel {
     }
 
     fun addRadios(v: View) {
-        val group: InterRadioGroup = (v.parent as ViewGroup).findViewById(R.id.expiry_dates)
+        val group: SimpleRadioGroup = (v.parent as ViewGroup).findViewById(R.id.expiry_dates)
         group.addRaioButtonWithiList(getDateList(), v.context)
     }
 

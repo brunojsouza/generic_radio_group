@@ -4,22 +4,25 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.*;
+import android.widget.LinearLayout;
+import android.widget.RadioButton;
+import android.widget.TableLayout;
+import android.widget.TableRow;
 import androidx.databinding.BindingAdapter;
 import androidx.databinding.ObservableField;
 import com.bruno.groupradiobutton.R;
 
 import java.util.ArrayList;
 
-public class InterRadioGroup extends TableLayout implements OnClickListener {
+public class SimpleRadioGroup extends TableLayout implements OnClickListener {
 
     private RadioButton activeRadioButton;
 
-    public InterRadioGroup(Context context) {
+    public SimpleRadioGroup(Context context) {
         super(context);
     }
 
-    public InterRadioGroup(Context context, AttributeSet attrs) {
+    public SimpleRadioGroup(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
 
@@ -119,7 +122,7 @@ public class InterRadioGroup extends TableLayout implements OnClickListener {
     }
 
     @BindingAdapter("dateList")
-    public  static void setDateList(InterRadioGroup view, ObservableField<ArrayList<String>> list) {
+    public static void setDateList(SimpleRadioGroup view, ObservableField<ArrayList<String>> list) {
         if(view.getChildCount() > 0)
             view.removeAllViews();
         view.addRaioButtonWithiList(list.get(), view.getContext());
