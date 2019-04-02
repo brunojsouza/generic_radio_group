@@ -5,10 +5,10 @@ import android.view.ViewGroup
 import androidx.databinding.ObservableBoolean
 import androidx.databinding.ObservableField
 import com.bruno.groupradiobutton.R
-import com.bruno.groupradiobutton.custom.InterRadioGroup
-import com.bruno.groupradiobutton.custom.radioGroup.CustomRadioGroup
-import com.bruno.groupradiobutton.custom.radioGroup.CustomRadioGroupAdapter
-import com.bruno.groupradiobutton.custom.radioGroup.CustomRadioGroupModel
+import com.bruno.groupradiobutton.old.custom.InterRadioGroup
+import com.bruno.groupradiobutton.old.custom.radioGroup.CustomRadioGroup
+import com.bruno.groupradiobutton.old.custom.radioGroup.CustomRadioGroupAdapter
+import com.bruno.groupradiobutton.old.custom.radioGroup.CustomRadioGroupModel
 
 class MainActivityViewModel {
     var itemSelected = ObservableBoolean(false)
