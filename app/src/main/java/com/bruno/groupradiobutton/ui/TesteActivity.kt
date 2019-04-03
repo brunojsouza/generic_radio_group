@@ -32,6 +32,8 @@ class TesteActivity : AppCompatActivity() {
                         "position -> " + position + " model -> " + model.title,
                         Toast.LENGTH_SHORT
                     ).show()
+
+                    (recycler.adapter as SimpleRadioAdapter).checkedItem(position)
                 }
             }
         )
