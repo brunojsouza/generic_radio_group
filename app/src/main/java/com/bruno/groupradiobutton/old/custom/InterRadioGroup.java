@@ -124,5 +124,4 @@ public class InterRadioGroup extends TableLayout implements OnClickListener {
             view.removeAllViews();
         view.addRaioButtonWithiList(list.get(), view.getContext());
     }
-
 }

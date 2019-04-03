@@ -3,6 +3,7 @@ package com.bruno.groupradiobutton.ui
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import androidx.recyclerview.widget.GridLayoutManager
 import com.bruno.groupradiobutton.R
 import com.bruno.groupradiobutton.components.SimpleRadioAdapter
 import com.bruno.groupradiobutton.components.SimpleRadioView
@@ -15,15 +16,14 @@ class TesteActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_teste)
+        recycler_dateExpiry.layoutManager = GridLayoutManager(this, 3)
 
-        recycler.adapter = SimpleRadioAdapter(
+        recycler_dateExpiry.adapter = SimpleRadioAdapter(
             Arrays.asList(
-                SimpleRadionModel("Radio 1"),
-                SimpleRadionModel("Radio 2"),
-                SimpleRadionModel("Radio 3"),
-                SimpleRadionModel("Radio 4"),
-                SimpleRadionModel("Radio 5"),
-                SimpleRadionModel("Radio 6")
+                SimpleRadionModel("Radio 1", false),
+                SimpleRadionModel("Radio 2", false),
+                SimpleRadionModel("Radio 3",false),
+                SimpleRadionModel("Radio 4",false)
             ),
             object : SimpleRadioView.OnItemClickListener {
                 override fun onItemClick(position: Int, model: SimpleRadionModel) {
@@ -33,7 +33,7 @@ class TesteActivity : AppCompatActivity() {
                         Toast.LENGTH_SHORT
                     ).show()
 
-                    (recycler.adapter as SimpleRadioAdapter).checkedItem(position)
+                    (recycler_dateExpiry.adapter as SimpleRadioAdapter).checkedItem(position)
                 }
             }
         )
