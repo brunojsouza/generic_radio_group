@@ -14,4 +14,9 @@
         <item name="android:layout_weight">1</item>
     </style>
 
+    <style name="DefaultRadioButton">
+        <item name="android:background">@drawable/bg_radio_custom</item>
+        <item name="android:textColor">@drawable/text_view_color</item>
+    </style>
+
 </resources>
